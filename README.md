@@ -24,6 +24,10 @@ Usage
        console.log("act on individual respones here", response);
     });
     
+    requestGroup.append({
+      "www.aol.com" : ["/news", "/games", "/video"]
+    });
+    
     requestGroup.addListener('end', function(responseTree){
        console.log("returns all the responses in an responseTree Object", responseTree)
     });
