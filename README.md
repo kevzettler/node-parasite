@@ -1,11 +1,9 @@
-SpecStorm
+ParaSite
 ==========
 
-SpecStorm allows you to run your selenium tests concurrently (at the file-level) without colliding with one another, and with almost no changes to your current rspec selenium specs. It hashes each spec file and then uses the hash as a database prefix, giving us a nice namespacing mechanism. It auto-patches rails' link-generation to append a db_prefix parameter, and dynamically resets the prefix on each request.
+ParaSite allows you to fetch multiple http requests asynchronously and in parallel. 
 
-It also includes an rspec helper that patches the Selenium Driver class to calculate the db prefix, and will automatically append it to any "open" command.
-
-To read more about setting up Specstorm and its use cases, please read the original post on [Sauce Lab's blog](http://saucelabs.com/blog/index.php/2010/02/specstorm-for-rails-or-running-your-selenium-specs-in-parallel-124-at-a-time)
+It supports events like "each", and "end" that allow you to act on the responses upon individual completion or total completion. 
 
 Installation
 ============
