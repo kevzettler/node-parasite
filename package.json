@@ -1,16 +1,16 @@
 { "name" : "parasite"
 , "description" : "Parallel Http Clients"
 , "tags" : ["http", "fast", "parallel" "util", "utility"]
-, "version" : "0.10.0"
+, "version" : "0.1.0"
 , "author" : "Kev Zettler <kevzettler@gmail.com>"
 , "directories" :
   { "lib" : "lib" }
 , "repository" :
   { "type" : "git"
-  , "url" : "http://github.com/mikeal/node-utils.git"
+  , "url" : "http://github.com/kevzettler/node-parasite.git"
   }
 , "bugs" :
-  { "web" : "http://github.com/mikeal/node-utils/issues" }
+  { "web" : "http://github.com/kevzettler/node-parasite/issues" }
 , "engines" : ["node >=0.1.90"]
 , "main" : "./lib/main"
 }
