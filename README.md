@@ -21,11 +21,7 @@ Usage
     requestGroup = parasite(sites);
     
     requestGroup.addListener('each', function(response){
-       console.log("act on individual respones here", response);
-    });
-    
-    requestGroup.append({
-      "www.aol.com" : ["/news", "/games", "/video"]
+       console.log("act on individual respones here", response.body);
     });
     
     requestGroup.addListener('end', function(responseTree){
@@ -40,4 +36,10 @@ TODO
 license
 ======
 
-released under the MIT license
+released under the MIT license    
+
+
+THANKS
+======    
+
+Sami Samhuri - for suggesting the use of nodes event emitters instead of custom hackery.
