@@ -1,23 +1,18 @@
 var parasite = require(__dirname+"/../lib/main.js");
 
+var sys = require('sys');
+
 var sites = {"www.google.com" : ["/news", "/images", "/finance"]};
+
+sys.puts(sys.inspect(parasite));
 
 var requestGroup = parasite(sites);
 
-requestGroup.addListener("each", function(response){
+requestGroup.on("response", function(response){
    console.log("individual responses", response);
 });
 
 
-requestGroup.append({
-  "www.yahoo.com" : ["/news", "/games", "/autos"]
-});
-
-requestGroup.addListener("end", function(responseTree){
+requestGroup.on("end", function(responseTree){
    console.log("omg response tree", responseTree);
-});
-
-
-requestGroup.append({
-  "www.aol.com" : ["/news", "/games", "/video"]
 });
