@@ -20,7 +20,7 @@ Usage
     
     requestGroup = parasite(sites);
     
-    requestGroup.addListener('each', function(response){
+    requestGroup.addListener('response', function(response){
        console.log("act on individual respones here", response.body);
     });
     
