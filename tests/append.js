@@ -1,10 +1,10 @@
 var parasite = require(__dirname+"/../lib/main.js");
 
-var sys = require('sys');
+var util = require('util');
 
 var sites = {"www.google.com" : ["/news", "/images", "/finance"]};
 
-sys.puts(sys.inspect(parasite));
+util.puts(util.inspect(parasite));
 
 var requestGroup = parasite(sites);
 
