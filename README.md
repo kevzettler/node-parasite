@@ -3,7 +3,7 @@ ParaSite
 
 ParaSite allows you to fetch multiple http requests asynchronously and in parallel. 
 
-It supports events like "each", and "end" that allow you to act on the responses upon individual completion or total completion. 
+It supports events like "response", and "end" that allow you to act on the responses upon individual completion or total completion respectively. 
 
 Installation
 ============
@@ -20,7 +20,7 @@ Usage
     
     requestGroup = parasite(sites);
     
-    requestGroup.addListener('each', function(response){
+    requestGroup.addListener('response', function(response){
        console.log("act on individual respones here", response.body);
     });
     
