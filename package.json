@@ -1,11 +1,7 @@
 { "name" : "parasite"
 , "description" : "Parallel Http Clients"
 , "tags" : ["http", "fast", "parallel", "util", "utility"]
-<<<<<<< HEAD
-, "version" : "0.0.4"
-=======
-, "version" : "0.0.6"
->>>>>>> 6c28198ecc9c30ba4dbc58e5650dedc9d482650b
+, "version" : "0.0.7"
 , "author" : "Kev Zettler <kevzettler@gmail.com>"
 , "directories" :
   { "lib" : "lib" }
